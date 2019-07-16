@@ -1,1 +1,11 @@
-telebot
+certifi==2019.6.16
+chardet==3.0.4
+docopt==0.6.2
+idna==2.8
+pipreqs==0.4.9
+pyTelegramBotAPI==3.6.6
+random2==1.0.1
+requests==2.22.0
+six==1.12.0
+urllib3==1.25.3
+yarg==0.1.9
