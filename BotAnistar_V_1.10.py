@@ -1,7 +1,7 @@
 import telebot
 import random
 
-token = TOKEN_TG
+token = "861985547:AAEN61AyePKOwwwcnYOPI6VLvwZDF6YpqEI"
 
 helloNew = ["AwADAgADcQQAAoREaEna38mVwAQFUAI","AwADAgADSQUAAl-uYEnfeal9RBCGTwI","AwADAgADUgMAAoDgaEmL_YJE9ZIbJgI","AwADAgADUwMAAoDgaEkNTnUo3FC-kAI","AwADAgADKAUAAiR2aEmJLCMrfNQK8gI","AwADAgADRgMAAgfAaEmWyuNUpVtvEQI"]
  #AwADAgADLAQAAicSaUlvogAB8Y6wZjoC ой да  ладно тебе, мы же хорошие, ня!
