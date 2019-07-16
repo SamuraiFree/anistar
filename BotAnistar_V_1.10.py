@@ -1,5 +1,4 @@
 import telebot
-import random
 
 token = 'TOKEN_TG'
 
