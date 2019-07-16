@@ -1,1 +1,1 @@
-worked: python BotAnistar_V_1.10.py
+worker: python BotAnistar_V_1.10.py
