@@ -3,7 +3,7 @@ import random
 
 token = "861985547:AAEN61AyePKOwwwcnYOPI6VLvwZDF6YpqEI"
 
-helloNew = ["AwADAgAD3gMAAo2OcUnyup0bUvh-TQI","AwADAgADxQMAAla-aUmWa4-NVHJ_7wI","AwADAgADyQMAAla-aUl5yt_f25SB2AI","AwADAgADywMAAla-aUn9qVOEHrV3lAI","AwADAgADoAQAAhxucElD4vRVuE4icQI","AwADAgADzAMAAla-aUkBM5bAy_uqJAI","AwADAgADAwQAAt0RcUm96BlMFQQjSQI","AwADAgADXgMAAq-hcUkpSWEBmd3r_gI","AwADAgADUgQAAs01aElBrpp-LSqJPAI"]
+helloNew = ["AwADAgAD3gMAAo2OcUnyup0bUvh-TQI","AwADAgADxQMAAla-aUmWa4-NVHJ_7wI","AwADAgADyQMAAla-aUl5yt_f25SB2AI","AwADAgADoAQAAhxucElD4vRVuE4icQI","AwADAgADzAMAAla-aUkBM5bAy_uqJAI","AwADAgADAwQAAt0RcUm96BlMFQQjSQI","AwADAgADXgMAAq-hcUkpSWEBmd3r_gI","AwADAgADUgQAAs01aElBrpp-LSqJPAI"]
 #AwADAgADLAQAAicSaUlvogAB8Y6wZjoC ой да  ладно тебе, мы же хорошие, ня!
 Hello = ["AwADAgADHwQAAt0RcUk4NdltrWzuOwI"]
 Bi = ["AwADAgAD4QIAAkXiaUldUVt0cRJyvwI"]
@@ -27,6 +27,6 @@ def send_text(message):
 #приветствие новых пользователей
 @bot.message_handler(content_types=["new_chat_members"])
 def handler_new_member(message):
-    bot.send_voice(message.chat.id, voice=(helloNew[random.randint(0,8)]) )
+    bot.send_voice(message.chat.id, voice=(helloNew[random.randint(0,7)]) )
     
 bot.polling()
