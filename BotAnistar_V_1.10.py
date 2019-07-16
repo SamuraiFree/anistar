@@ -26,6 +26,6 @@ def send_text(message):
 #приветствие новых пользователей
 @bot.message_handler(content_types=["new_chat_members"])
 def handler_new_member(message):
-    bot.send_voice(message.chat.id, voice=(mas[random.randint(0,4)]) )
+    bot.send_voice(message.chat.id, voice=(mas[1]) )
     
 bot.polling()
