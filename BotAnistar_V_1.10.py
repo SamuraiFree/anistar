@@ -4,7 +4,7 @@ import random
 token = 'TOKEN_TG'
 
 helloNew = ["AwADAgADcQQAAoREaEna38mVwAQFUAI","AwADAgADSQUAAl-uYEnfeal9RBCGTwI","AwADAgADUgMAAoDgaEmL_YJE9ZIbJgI","AwADAgADUwMAAoDgaEkNTnUo3FC-kAI","AwADAgADKAUAAiR2aEmJLCMrfNQK8gI","AwADAgADRgMAAgfAaEmWyuNUpVtvEQI"]
- AwADAgADLAQAAicSaUlvogAB8Y6wZjoC ой да  ладно тебе, мы же хорошие, ня!
+ #AwADAgADLAQAAicSaUlvogAB8Y6wZjoC ой да  ладно тебе, мы же хорошие, ня!
 Hello = ["AwADAgADRwMAAgfAaEliw-kNF6wJMgI"]
 Bi = ["AwADAgAD4QIAAkXiaUldUVt0cRJyvwI"]
 
