@@ -9,12 +9,13 @@ coll_helloNew = len(helloNew)-1
 
 
 
-Hello = ["AwADAgADGQYAAtw_iUl70atLjneUFAI","AwADAgADHwQAAt0RcUk4NdltrWzuOwI","AwADAgADWQQAAlS_eEn-ZG_pwyrU3QI","AwADAgADWgQAAlS_eEnd3oyrVnjjMgI","AwADAgADXgQAAlS_eEnOKmcT9z2xAAEC","AwADAgADlAQAAvOkeEkAAVziIkZhFU4C","AwADAgADYQQAAlS_eEkX1_BGj_Y68wI","AwADAgADlQQAAvOkeEll1hwtQqib5gI","AwADAgADYgQAAlS_eEkUnef00soWcAI","AwADAgADlgQAAvOkeEmfC3R7K2lPjwI"]
+Hello = ["AwADAgADGQYAAtw_iUl70atLjneUFAI","AwADAgADWQQAAlS_eEn-ZG_pwyrU3QI","AwADAgADWgQAAlS_eEnd3oyrVnjjMgI","AwADAgADXgQAAlS_eEnOKmcT9z2xAAEC","AwADAgADlAQAAvOkeEkAAVziIkZhFU4C","AwADAgADYQQAAlS_eEkX1_BGj_Y68wI","AwADAgADlQQAAvOkeEll1hwtQqib5gI","AwADAgADYgQAAlS_eEkUnef00soWcAI","AwADAgADlgQAAvOkeEmfC3R7K2lPjwI"]
 coll_Hello = len(Hello)-1
 
 
 
-Bi = ["AwADAgADGgYAAtw_iUmOrywYfFen7QI"]
+Bi = ["AwADAgADGgYAAtw_iUmOrywYfFen7QI","AwADAgADhwUAAuJhiEkzLj_ha8oNEwI","AwADAgADiAUAAuJhiEmtLsqSIXgTMAI"]
+coll_Bi = len(Bi)-1
 
 bot = telebot.TeleBot(token)
 @bot.message_handler(commands=['start'])
@@ -28,7 +29,7 @@ def send_text(message):
         bot.send_voice(message.chat.id, voice=(Hello[random.randint(0,coll_Hello)]) )
         
     elif message.text =='Пока' :
-        bot.send_voice(message.chat.id, voice=(Bi[0]) )
+        bot.send_voice(message.chat.id, voice=(Bi[random.randint(0,coll_Hello)]) )
         
     elif message.text == 'Ты потрясающий':
         bot.send_voice(message.chat.id, voice=("AwADAgADWQMAAkXJiEluk4EIWK8fCQI") )
