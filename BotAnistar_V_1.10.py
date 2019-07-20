@@ -55,11 +55,11 @@ def start_message(message):
 def send_text(message):
     if message.text == 'Привет':
         voice = open(Hello[random.randint(0,coll_Hello)], 'rb')
-        bot.send_voice(message.chat.id, voice)
+        bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
         
     elif message.text =='Пока' :
         voice = open(Bi[random.randint(0,coll_Bi)], 'rb')
-        bot.send_voice(message.chat.id, voice)
+        bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
         
     
   
@@ -68,6 +68,6 @@ def send_text(message):
 @bot.message_handler(content_types=["new_chat_members"])
 def handler_new_member(message):
     voice = open(helloNew[random.randint(0,coll_helloNew)], 'rb')
-    bot.send_voice(message.chat.id, voice)
+    bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
     
 bot.polling()
