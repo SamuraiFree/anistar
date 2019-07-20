@@ -4,17 +4,45 @@ import random
 
 token = "861985547:AAEN61AyePKOwwwcnYOPI6VLvwZDF6YpqEI"
 
-helloNew = ["AwADAgADlgQAApwvgEml69nLGGt5uwI","AwADAgAD5AMAAlS_eEmHHBqyfxYgbAI","AwADAgAD4QMAAlS_eEnSGj85-9fZHQI","AwADAgAD3gMAAo2OcUnyup0bUvh-TQI","AwADAgADvAUAAj0yeEmLMD0nHnbQKAI","AwADAgADvAUAAj0yeEmLMD0nHnbQKAI","AwADAgADxQMAAla-aUmWa4-NVHJ_7wI","AwADAgADyQMAAla-aUl5yt_f25SB2AI","AwADAgADoAQAAhxucElD4vRVuE4icQI","AwADAgADzAMAAla-aUkBM5bAy_uqJAI","AwADAgADAwQAAt0RcUm96BlMFQQjSQI","AwADAgADXgMAAq-hcUkpSWEBmd3r_gI","AwADAgADUgQAAs01aElBrpp-LSqJPAI"]
+
+helloNew = ["helloNewUsers/helloNewUsers_1.ogg",
+"helloNewUsers/helloNewUsers_2.ogg",
+"helloNewUsers/helloNewUsers_3.ogg",
+"helloNewUsers/helloNewUsers_4.ogg",
+"helloNewUsers/helloNewUsers_5.ogg",
+"helloNewUsers/helloNewUsers_6.ogg",
+"helloNewUsers/helloNewUsers_7.ogg",
+"helloNewUsers/helloNewUsers_8.ogg",
+"helloNewUsers/helloNewUsers_9.ogg",
+"helloNewUsers/helloNewUsers_10.ogg",
+"helloNewUsers/helloNewUsers_11.ogg",
+"helloNewUsers/helloNewUsers_12.ogg",]
 coll_helloNew = len(helloNew)-1
 
 
 
-Hello = ["AwADAgADGQYAAtw_iUl70atLjneUFAI","AwADAgADWQQAAlS_eEn-ZG_pwyrU3QI","AwADAgADWgQAAlS_eEnd3oyrVnjjMgI","AwADAgADXgQAAlS_eEnOKmcT9z2xAAEC","AwADAgADlAQAAvOkeEkAAVziIkZhFU4C","AwADAgADYQQAAlS_eEkX1_BGj_Y68wI","AwADAgADlQQAAvOkeEll1hwtQqib5gI","AwADAgADYgQAAlS_eEkUnef00soWcAI","AwADAgADlgQAAvOkeEmfC3R7K2lPjwI"]
+Hello = ["hello/hello_1.ogg",
+"hello/hello_2.ogg",
+"hello/hello_3.ogg",
+"hello/hello_4.ogg",
+"hello/hello_5.ogg",
+"hello/hello_6.ogg",
+"hello/hello_7.ogg",
+"hello/hello_8.ogg",
+"hello/hello_9.ogg",
+"hello/hello_10.ogg",
+"hello/hello_11.ogg",]
 coll_Hello = len(Hello)-1
 
 
 
-Bi = ["AwADAgADGgYAAtw_iUmOrywYfFen7QI","AwADAgADhwUAAuJhiEkzLj_ha8oNEwI","AwADAgADiAUAAuJhiEmtLsqSIXgTMAI"]
+Bi = ["bi/bi_1.ogg",
+"bi/bi_2.ogg",
+"bi/bi_3.ogg",
+"bi/bi_4.ogg",
+"bi/bi_5.ogg",
+"bi/bi_6.ogg",
+"bi/bi_7.ogg"]
 coll_Bi = len(Bi)-1
 
 bot = telebot.TeleBot(token)
@@ -26,62 +54,20 @@ def start_message(message):
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     if message.text == 'Привет':
-        bot.send_voice(message.chat.id, voice=(Hello[random.randint(0,coll_Hello)]) )
+        voice = open(Hello[random.randint(0,coll_Hello)], 'rb')
+        bot.send_voice(message.chat.id, voice)
         
     elif message.text =='Пока' :
-        bot.send_voice(message.chat.id, voice=(Bi[random.randint(0,coll_Hello)]) )
-        
-    elif message.text == 'Ты потрясающий':
-        bot.send_voice(message.chat.id, voice=("AwADAgADWQMAAkXJiEluk4EIWK8fCQI") )
-        
-    elif message.text =='ты потрясающий' :
-        bot.send_voice(message.chat.id, voice=("AwADAgADWQMAAkXJiEluk4EIWK8fCQI") )
-
-    elif message.text =='Доброе утро' :
-        bot.send_voice(message.chat.id, voice=("AwADAgAD4wMAAjtqgUmAQWmf8wzDkgI") )
-
-    elif message.text =='доброе утро' :
-        bot.send_voice(message.chat.id, voice=("AwADAgAD4wMAAjtqgUmAQWmf8wzDkgI") )
-
-    elif message.text =='Как дела?' :
-        bot.send_voice(message.chat.id, voice=("AwADAgAD8wMAAjtugUmROyK_KjnQgAI") )
-    elif message.text =='как дела?' :
-        bot.send_voice(message.chat.id, voice=("AwADAgAD8wMAAjtugUmROyK_KjnQgAI") )
-    elif message.text =='Чем занимаешься?' :
-        bot.send_voice(message.chat.id, voice=("AwADAgADtgQAAt0ngEmxec0aQanmoAI") )
-    elif message.text =='чем занимаешься?' :
-        bot.send_voice(message.chat.id, voice=("AwADAgADtgQAAt0ngEmxec0aQanmoAI") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    elif message.text =='#' :
-        bot.send_voice(message.chat.id, voice=("№") )
-    
+        voice = open(Bi[random.randint(0,coll_Bi)], 'rb')
+        bot.send_voice(message.chat.id, voice)
         
     
+  
         
 #приветствие новых пользователей
 @bot.message_handler(content_types=["new_chat_members"])
 def handler_new_member(message):
-    bot.send_voice(message.chat.id, voice=(helloNew[random.randint(0,coll_helloNew)]) )
+    voice = open(helloNew[random.randint(0,coll_helloNew)], 'rb')
+    bot.send_voice(message.chat.id, voice)
     
 bot.polling()
