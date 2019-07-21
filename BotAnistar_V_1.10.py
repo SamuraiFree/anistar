@@ -30,8 +30,7 @@ Hello = ["hello/hello_1.ogg",
 "hello/hello_7.ogg",
 "hello/hello_8.ogg",
 "hello/hello_9.ogg",
-"hello/hello_10.ogg",
-"hello/hello_11.ogg",]
+"hello/hello_10.ogg",]
 coll_Hello = len(Hello)-1
 
 
@@ -40,9 +39,7 @@ Bi = ["bi/bi_1.ogg",
 "bi/bi_2.ogg",
 "bi/bi_3.ogg",
 "bi/bi_4.ogg",
-"bi/bi_5.ogg",
-"bi/bi_6.ogg",
-"bi/bi_7.ogg"]
+"bi/bi_5.ogg",]
 coll_Bi = len(Bi)-1
 
 bot = telebot.TeleBot(token)
