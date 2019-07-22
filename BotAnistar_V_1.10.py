@@ -84,9 +84,6 @@ def send_text(message):
     elif message.text =='все идет по плану!' :
         audio = open("helloNewUsers/VseIdetPoPlanu.mp3", 'rb')
         bot.send_audio(message.chat.id, audio, reply_to_message_id=message.message_id)
-      elif message.text =='все идет по плану!' :
-        voice = open("helloNewUserstiPotr.ogg", 'rb')
-        bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
     else:
         a=message.text
         z=a.split()
