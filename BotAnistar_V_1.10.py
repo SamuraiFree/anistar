@@ -16,6 +16,7 @@ helloNew = ["helloNewUsers/helloNewUsers_1.ogg",
 "helloNewUsers/helloNewUsers_9.ogg",
 "helloNewUsers/helloNewUsers_10.ogg",
 "helloNewUsers/helloNewUsers_11.ogg",
+"helloNewUsers/helloNewUsersA1.ogg",
 "helloNewUsers/helloNewUsers_12.ogg",]
 coll_helloNew = len(helloNew)-1
 
