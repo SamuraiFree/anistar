@@ -61,16 +61,16 @@ def send_text(message):
         
     
     elif message.text =='Все идет по плану' :
-        audio = open("helloNewUsers/VseIdetPoPlanu.mp3, 'rb')
+        audio = open("helloNewUsers/VseIdetPoPlanu.mp3", 'rb')
         bot.send_audio(message.chat.id, audio, reply_to_message_id=message.message_id)
     elif message.text =='Все идет по плану!' :
-        audio = open("helloNewUsers/VseIdetPoPlanu.mp3, 'rb')
+        audio = open("helloNewUsers/VseIdetPoPlanu.mp3", 'rb')
         bot.send_audio(message.chat.id, audio, reply_to_message_id=message.message_id)
     elif message.text =='все идет по плану' :
-        audio = open("helloNewUsers/VseIdetPoPlanu.mp3, 'rb')
+        audio = open("helloNewUsers/VseIdetPoPlanu.mp3", 'rb')
         bot.send_audio(message.chat.id, audio, reply_to_message_id=message.message_id)
     elif message.text =='все идет по плану!' :
-        audio = open("helloNewUsers/VseIdetPoPlanu.mp3, 'rb')
+        audio = open("helloNewUsers/VseIdetPoPlanu.mp3", 'rb')
         bot.send_audio(message.chat.id, audio, reply_to_message_id=message.message_id)
         
     
