@@ -69,7 +69,8 @@ bzzz=["хуй","Хуй","Хуйня","хуйня","блять","Блять","Б�
       "Пидорасы","пидорасы","суки","Суки","Хуиглот","хуиглот","ебу","Ебу","Ебал",
       "ебал",
       "Жопа","жопа","Жопу","жопу","анус","Анус","Сучка","сучка","хули","Хули","блядство","Блядство",
-      "Конченный","конченный"]
+      "Конченный","конченный","Анимевост","анимевост","Анилибрия","анилибрия","AnimeVost","animevost",
+      "Анимевосторг","анимевосторг","Анивост","анивост","Либрия","либрия","Мартышлюшка","мартышлюшка","винда"]
 #############
 bot = telebot.TeleBot(token)
 @bot.message_handler(commands=['start'])
@@ -106,6 +107,22 @@ def send_text(message):
     elif message.text =='Ты потрясающий!' :
         voice = open("helloNewUsers/tiPotr.ogg", 'rb')
         bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
+    elif message.text =='Чем занимаешься?' :
+        voice = open("endos/nlo.ogg", 'rb')
+        bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
+    elif message.text =='чем занимаешься?' :
+        voice = open("endos/nlo.ogg", 'rb')
+        bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
+    elif message.text =='Чем занимаешься' :
+        voice = open("endos/nlo.ogg", 'rb')
+        bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
+    elif message.text =='чем занимаешься' :
+        voice = open("endos/nlo.ogg", 'rb')
+        bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
+    elif message.text =='Бот' :
+        bot.send_message(message.chat.id, 'Ты кого ботом назвал? Порву как тузик грелку!!!',reply_to_message_id=message.message_id)
+     elif message.text =='бот' :
+        bot.send_message(message.chat.id, 'Ты кого ботом назвал? Порву как тузик грелку!!!',reply_to_message_id=message.message_id)
     else:
         a=message.text
         z=a.split()
