@@ -107,6 +107,12 @@ def send_text(message):
     elif message.text =='все идет по плану!' :
         audio = open("helloNewUsers/VseIdetPoPlanu.mp3", 'rb')
         bot.send_audio(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='Ели мясо мужики!' :
+        audio = open("endos/eli.mp3", 'rb')
+        bot.send_audio(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='Ели мясо мужики' :
+        audio = open("endos/eli.mp3", 'rb')
+        bot.send_audio(message.chat.id, audio, reply_to_message_id=message.message_id)
     elif message.text =='Ты потрясающий' :
         voice = open("helloNewUsers/tiPotr.ogg", 'rb')
         bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
