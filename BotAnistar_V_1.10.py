@@ -121,7 +121,7 @@ def send_text(message):
         bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
     elif message.text =='Бот' :
         bot.send_message(message.chat.id, 'Ты кого ботом назвал? Порву как тузик грелку!!!',reply_to_message_id=message.message_id)
-     elif message.text =='бот' :
+    elif message.text =='бот' :
         bot.send_message(message.chat.id, 'Ты кого ботом назвал? Порву как тузик грелку!!!',reply_to_message_id=message.message_id)
     else:
         a=message.text
