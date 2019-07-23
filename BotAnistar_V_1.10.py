@@ -31,7 +31,8 @@ Hello = ["hello/hello_1.ogg",
 "hello/hello_7.ogg",
 "hello/hello_8.ogg",
 "hello/hello_10.ogg",
-"hello/hello_11.ogg",]
+"hello/hello_11.ogg",
+"hello/hello_12.ogg",]
 coll_Hello = len(Hello)-1
 
 
@@ -45,7 +46,11 @@ matt = ["endos/mat1.ogg",
 "endos/mat8.ogg",
 "endos/mat9.ogg",
 "endos/mat10.ogg",
-"endos/mat11.ogg",]
+"endos/mat11.ogg",
+"endos/mat12.ogg",
+"endos/mat13.ogg",
+"endos/mat14.ogg",
+"endos/mat15.ogg",]
 coll_matt = len(matt)-1
 
 
@@ -55,6 +60,7 @@ Bi = ["bi/bi_1.ogg",
 "bi/bi_4.ogg",
 "bi/bi_5.ogg",
 "bi/bi_6.ogg",
+"bi/bi_7.ogg",
 "bi/bibi.ogg"]
 coll_Bi = len(Bi)-1
 #########Маты
