@@ -35,12 +35,27 @@ Hello = ["hello/hello_1.ogg",
 coll_Hello = len(Hello)-1
 
 
+matt = ["endos/mat1.ogg",
+"endos/mat2.ogg",
+"endos/mat3.ogg",
+"endos/mat4.ogg",
+"endos/mat5.ogg",
+"endos/mat6.ogg",
+"endos/mat7.ogg",
+"endos/mat8.ogg",
+"endos/mat9.ogg",
+"endos/mat10.ogg",
+"endos/mat11.ogg",]
+coll_matt = len(matt)-1
+
+
 
 Bi = ["bi/bi_1.ogg",
 "bi/bi_2.ogg",
 "bi/bi_4.ogg",
 "bi/bi_5.ogg",
-"bi/bi_6.ogg",]
+"bi/bi_6.ogg",
+"bi/bibi.ogg"]
 coll_Bi = len(Bi)-1
 #########Маты
 bzzz=["хуй","Хуй","Хуйня","хуйня","блять","Блять","Бля","бля","Пидорас",
@@ -85,13 +100,20 @@ def send_text(message):
     elif message.text =='все идет по плану!' :
         audio = open("helloNewUsers/VseIdetPoPlanu.mp3", 'rb')
         bot.send_audio(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='Ты потрясающий' :
+        voice = open("helloNewUsers/tiPotr.ogg", 'rb')
+        bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
+    elif message.text =='Ты потрясающий!' :
+        voice = open("helloNewUsers/tiPotr.ogg", 'rb')
+        bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
     else:
         a=message.text
         z=a.split()
         for i in z:
             for c in bzzz:
                 if i == c:
-                    bot.send_message(message.chat.id, 'Привет, ты написал МАТ',reply_to_message_id=message.message_id)
+                    voice = open(matt[random.randint(0,coll_matt)], 'rb')
+                    bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
         
     
   
