@@ -155,6 +155,12 @@ def send_text(message):
     elif message.text =='мир' :
         audio = open("endos/RastaDontWory.mp3", 'rb')
         bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+     elif message.text =='Мир' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='мир.' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
       
       
     elif message.text =='Бот' :
