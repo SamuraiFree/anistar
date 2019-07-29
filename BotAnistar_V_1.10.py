@@ -131,6 +131,32 @@ def send_text(message):
     elif message.text =='чем занимаешься' :
         voice = open("endos/nlo.ogg", 'rb')
         bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
+    elif message.text =='Расслабься' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='расслабься' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='Не волнуйся.' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='не волнуйся.' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='Не волнуйся' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='не волнуйся' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='Мир.' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+    elif message.text =='мир' :
+        audio = open("endos/RastaDontWory.mp3", 'rb')
+        bot.send_voice(message.chat.id, audio, reply_to_message_id=message.message_id)
+      
+      
     elif message.text =='Бот' :
         bot.send_message(message.chat.id, 'Ты кого ботом назвал? Порву как тузик грелку!!!',reply_to_message_id=message.message_id)
     elif message.text =='бот' :
