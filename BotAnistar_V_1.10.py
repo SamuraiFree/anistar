@@ -191,7 +191,7 @@ def send_text(message):
 #приветствие новых пользователей
 @bot.message_handler(content_types=["new_chat_members"])
 def handler_new_member(message):
-    voice = open(helloNew[random.randint(0,coll_helloNew)], 'rb')
+    voice=open(helloNew[random.randint(0,coll_helloNew)], 'rb')
     bot.send_voice(message.chat.id, voice, reply_to_message_id=message.message_id)
     bot.send_message(message.chat.id, 'https://telegra.ph/PRAVILA-CHATA-AniStar-Anime-07-04',reply_to_message_id=message.message_id )
     
