@@ -178,7 +178,7 @@ def send_text(message):
         bot.send_message(message.chat.id, 'Ты кого ботом назвал? Порву как тузик грелку!!!',reply_to_message_id=message.message_id)
     else:
         a=message.text
-        z=a.split()
+        z= a.split()
         for i in z:
             for c in bzzz:
                 if i == c:
